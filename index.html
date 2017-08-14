@@ -46,6 +46,10 @@
         </div>
       </div>
       <div class="row cta">
+        <div class="col-sm-12">
+          <div id="getting-started"></div>
+        </div>
+        <!--
         <div class="col-sm-6">
           <a href="#" class="btn btn-info btn-lg" role="button"><b>Create Carbon Vote</b></a><br/>
           <div class="vote-desc">Carbon Vote conduct voting with number of voter's coins without requiring coins to leave voter's wallet.</div>
@@ -53,7 +57,7 @@
         <div class="col-sm-6">
           <a href="#" class="btn btn-success btn-lg" role="button"><b>Create Normal Vote</b></a><br/>
           <div class="vote-desc">Normal Vote conduct voting with number of voters as decision criteria.</div>
-        </div>
+        </div>-->
         <div class="col-sm-12 concl">
           <div class="concl-desc">
             Trusted and community reviewed voting dapp to ease vote creations backed by your organisation tokens or number of users.
@@ -68,6 +72,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+      $("#getting-started")
+      .countdown("2017/09/07", function(event) {
+        $(this).text("Launching on MainNet in "+
+          event.strftime('%D days %H:%M:%S')
+        );
+      });
+    </script>
 
 </body>
 
