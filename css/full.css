@@ -4,15 +4,7 @@ body {
     background-color: transparent;
     color: #ddd;
 }
-#getting-started {
-  color: #fff;
-  font-family: 'Cardo', serif;
-  font-size: 2.0em;
-  font-weight: normal;
-  font-style: italic;
-  letter-spacing: 0.1em;
-  line-height: 2.2em;
-}
+
 .cta {
   text-align: center;
   padding-top: 50px;

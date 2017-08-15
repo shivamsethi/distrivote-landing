@@ -3,10 +3,34 @@
 <head>
 	<title> Distrivote Web App </title>
 	<link rel="stylesheet" type="text/css" href="css/milligram.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link
+		rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+	<nav
+		class="navbar navbar-default">
+		<div
+			class="container-fluid">
+			<div
+				class="navbar-header">
+				<a class="navbar-brand" href="#">DistriVote</a>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
 
 		<div class="row">
@@ -21,7 +45,7 @@
 		<div class="row">
 
 			<div class="column column-20">
-				space here....
+				
 			</div>
 
 
@@ -30,50 +54,43 @@
 					<ul style="list-style:none;">
 
 						<li class="poll_title" style="display: none;">
-							<label style="text-align: center;font-size: 4rem;padding: 0;margin: 0;">Title </label><br/>
+							<legend class="big-legend">Title</legend>
 							<input type="text" name="poll_title" id="poll_title" autocomplete="off" />
 							<span id="error_poll_title"></span>
 						</li>
 
 						<li class="poll_description" style="display: none;">
-							<label style="text-align: center;font-size: 4rem;padding: 0;margin: 0;">Description </label><br/>
-							<input type="text" name="poll_description" id="poll_description" autocomplete="off" />
+							<legend class="big-legend">Description</legend>
+							<textarea name="poll_description" id="poll_description" autocomplete="off" ></textarea>
 							<span id="error_poll_description"></span>
 						</li>
 
 						<li class="poll_num_choices" style="display: none;">
-							<label style="text-align: center;font-size: 4rem;padding: 0;margin: 0;">Number of Choices </label><br/>
+							<legend class="big-legend">Number of choices</legend>
 							<input type="text" name="poll_num_choices" id="poll_num_choices" autocomplete="off" />
 							<span id="error_poll_num_choices"></span>
 						</li>
 
-						<li class="username" style="display: none;">
-							<label style="text-align: center;font-size: 4rem;padding: 0;margin: 0;">Username </label><br/>
-							<input type="text" name="name" id="username" autocomplete="off" />
-							<span id="error0"></span>
+						<li
+							class="options_list">
+							<div>
+								<legend>Choices</legend>
+								<span
+									id="choice">
+								</span>
+							</div>	
 						</li>
 
-
-						<li class="password" style="display: none;">
-							<label style="text-align: center;font-size: 4rem;padding: 0;margin: 0;">Password </label><br/>
-							<input type="password" name="password" id="password" />
-							<span id="error1"></span>
-						</li>
-
-						<li class="email" style="display: none;">
-							<label style="text-align: center;font-size: 4rem;padding: 0;margin: 0;">Email </label><br/>
-							<input type="text" name="email" id="email" autocomplete="off" />
-							<span id="error2"></span>
-						</li>
-
-						<li class="submit" style="margin-left: 25rem;display: none;">
-							<input type="submit" value=" Register " id='submit' />
+						<li
+							class="submit"
+							style="margin-left: 25rem;display: none;">
+							<a id="submit" class="btn btn-success btn-lg">Create Vote</a>
 						</li>
 					</ul>
 				</form>
 			</div>
 			<div class="column column-20">
-				space here....
+				
 			</div>
 		</div>
 
